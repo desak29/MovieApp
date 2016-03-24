@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Movie Insider</title>
+	<title>An awesome movie app!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id="wrapper">
-        here is my 
-    </div>
+
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<form id="movie-form">
+					<input type="text" id="searchText" class="typeahead" placeholder="Search for...">
+					<input type="submit" class="btn btn-primary" value="search">
+					<select>
+                        <option value="movie">Movie</option>
+                        <option value="tv ">Movie</option>
+                        <option value="actor">Movie</option>
+						<option value="now-playing">Now Playing</option>
+						<option value="top-rated">Top Rated</option>
+                        <option value="most-popular">Most Popular </option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="page-heading" class="col-sm-12">
+				Now Playing
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="poster-grid" class="col-sm-12">
+				<!-- Add in the HTML here via jQuery!! -->
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
 </body>
 </html>
+
+
+
+
