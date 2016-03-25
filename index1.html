@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An awesome movie app!</title>
+    <link rel="stylesheet" href="https://assets.tmdb.org/multi_assets/dfea878538a412db67b7cc1280415a95/stylesheets/normalize.css,v2/glyphicons.css,v2/glyphicons-social.css,v2/index.css,v2/screen.css,v2/media_list.css,v2/form.css,v2/table.css,v2/content.css,v2/search.css,kendo-2015-2.805/kendo.common-material.min.css,kendo-2015-2.805/kendo.material.min.css,v2/kendo.material.override.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--<section class="search">
+      <form action="/search?language=en-US" method="get" accept-charset="utf-8">
+        
+        <input name="language" value="en-US" type="hidden">
+        
+        <span class="glyphicons glyphicons-search x1"></span>
+        <span style="position: relative; display: inline-block; direction: ltr;" class="twitter-typeahead"><input spellcheck="false" readonly="" class="tt-hint" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(227, 227, 227) none repeat scroll 0% 0%;" tabindex="-1" autocorrect="off" autofill="off" autocomplete="off" value="george clooney" type="text"><input id="searchText" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" spellcheck="false" class="tt-input" id="search" name="query" tabindex="2" autocorrect="off" autofill="off" autocomplete="off" placeholder="Search for a movie, tv show, person..." value="george clooney" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: Arial,sans-serif; font-size: 20.8px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><span style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;" class="tt-dropdown-menu"><div class="tt-dataset-media-search"></div></span></span>
+        <input type="submit" class="btn btn-primary" value="search">
+      </form>
+    </section>-->
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<form id="movie-form">
+					<input type="text" id="searchText" class="typeahead" placeholder="Search for...">
+					<input type="submit" class="btn btn-primary" value="search">
+					<select>
+                        <option value="multi">All</option>
+                        <option value="movie">Movie</option>
+                        <option value="Actor">Actor</option>
+                        <option value="tv">Movie</option>
+                          
+						<option value="now-playing">Now Playing</option>
+						<option value="top-rated">Top Rated</option>
+                        <option value="most-popular">Most Popular </option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="page-heading" class="col-sm-12">
+				Now Playing
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="poster-grid" class="col-sm-12">
+				<!-- Add in the HTML here via jQuery!! -->
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
+
+
+
+
