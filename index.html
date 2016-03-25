@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>An awesome movie app!</title>
+	<title>The Movie Card!</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -15,15 +16,19 @@
 				<form id="movie-form">
 					<input type="text" id="searchText" class="typeahead" placeholder="Search for...">
 					<input type="submit" class="btn btn-primary" value="search">
-					<select>
-                        <option value="movie">Movie</option>
-                        <option value="tv ">Movie</option>
-                        <option value="actor">Movie</option>
-						<option value="now-playing">Now Playing</option>
-						<option value="top-rated">Top Rated</option>
-                        <option value="most-popular">Most Popular </option>
+					<select id="searchFilter">
+						<option value="movie">Movie</option>
+						<option value="person">Actor</option>
+						<option value="tv">TV</option>
+						<option value="multi">All</option>
 					</select>
 				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="genre-buttons" class="col-sm-12 text-center">
+				<!-- Our Genre buttons will go here!! -->
 			</div>
 		</div>
 
@@ -42,11 +47,10 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+
 
 </body>
 </html>
-
-
-
-
